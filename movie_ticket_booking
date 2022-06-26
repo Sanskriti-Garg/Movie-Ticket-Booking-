@@ -1,0 +1,506 @@
+#include<stdio.h>
+
+#include<stdlib.h>
+
+#include<string.h>
+
+
+struct book
+
+{
+
+    char name[25];
+
+    char date[20];
+
+    char number[25];
+
+}b;
+
+
+
+//for booking tickets
+void Book_Ticket_Gangubai();
+void Book_Ticket_JugjuggJeeyo();
+void Book_Ticket_ThorLoveAndThunder();
+void Book_Ticket_BhoolBhuliya2();
+
+
+void main()
+
+{
+
+    
+
+    int ch;
+
+    
+
+        
+
+        printf("\n||=======================================================================||");
+
+        printf("\n||                                                                       ||");
+
+        printf("\n||                Welcome to Moive Ticket Booking System                 ||");
+
+        printf("\n||                                                                       ||");
+
+        printf("\n||=======================================================================||");
+
+        printf("\n||          Press [1] To Book Tickets For GANGUBAI                               ||");
+
+        printf("\n||-----------------------------------------------------------------------||");
+
+        printf("\n||          Press [2] To Book Tickets For JUGJUGG JEEYO                          ||");
+
+        printf("\n||-----------------------------------------------------------------------||");
+
+        
+        printf("\n||-----------------------------------------------------------------------||");
+
+        printf("\n||          Press [3] To Book Tickets For THOR : LOVE AND THUNDER              ||");
+
+        printf("\n||-----------------------------------------------------------------------||");
+
+        printf("\n||          Press [4] To Book Tickets For BHOOL BHULAIYAA 2            ||");
+
+        printf("\n||-----------------------------------------------------------------------||");
+
+        printf("\n||          Press [5] To Exit                                            ||");
+
+        printf("\n||=======================================================================||");
+
+        printf("\n||          Please Enter Your Choice::                                   ||");
+
+        printf("\n||=======================================================================||\n\n");
+
+        scanf("%d",&ch);
+
+        switch (ch)
+
+        {
+
+            case 1 :
+
+                Book_Ticket_Gangubai();
+
+                break;
+
+
+
+            case 2:
+
+                Book_Ticket_JugjuggJeeyo();
+
+                break;
+
+
+
+            case 3:
+
+                Book_Ticket_ThorLoveAndThunder();
+
+                break;
+
+
+
+            case 4:
+
+                Book_Ticket_BhoolBhuliya2();
+
+                break;
+
+
+
+            case 5:
+
+                printf("\n*** Thank You! Visit Again!!! ***\n\n");
+
+                exit(0);
+
+
+
+            default:
+
+                printf("\nWrong choice!!!\nTry Again!!!");
+
+                break;
+
+        }
+
+   
+
+}
+
+
+void Book_Ticket_Gangubai()
+{
+    int type;
+    printf("ENTER THE DATE FOR MOVIE BOOKING\n");
+   
+    scanf("%s" , b.date);
+    
+    
+    printf("PRESS [1] FOR SILVER CLASS Rs-230\n");
+    printf("PRESS [2] FOR GOLD CLASS Rs-270\n");
+    printf("PRESS [3] FOR DIAMOND CLASS Rs-300\n");
+    printf("PRESS [4] FOR PLATINUM CLASS Rs-350\n");
+    printf("ENTER YOUR CHOICE\n");
+    scanf("%d", &type);
+    switch(type)
+    {
+        case 1:
+        
+    printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no1;
+    scanf("%d" , &seat_no1);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no1*230));
+    
+    break;
+      case 2:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no2;
+    scanf("%d" , &seat_no2);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no2*270));
+    
+    break;
+      case 3:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no3;
+    scanf("%d" , &seat_no3);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no3*300));
+    
+    break;
+      case 4:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no4;
+    scanf("%d" , &seat_no4);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no4*350));
+    
+    
+    break;
+    
+    default: 
+    printf("INVALID INPUT SORRY!");
+    break;
+    }
+}
+    
+    
+    
+    
+
+    
+    
+  void Book_Ticket_JugjuggJeeyo()
+{
+    int type;
+    printf("ENTER THE DATE FOR MOVIE BOOKING\n");
+   
+    scanf("%s" , b.date);
+    
+    
+    printf("PRESS [1] FOR SILVER CLASS Rs-230\n");
+    printf("PRESS [2] FOR GOLD CLASS Rs-270\n");
+    printf("PRESS [3] FOR DIAMOND CLASS Rs-300\n");
+    printf("PRESS [4] FOR PLATINUM CLASS Rs-350\n");
+    printf("ENTER YOUR CHOICE\n");
+    scanf("%d", &type);
+    switch(type)
+    {
+        case 1:
+        
+    printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no1;
+    scanf("%d" , &seat_no1);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no1*230));
+    
+    break;
+      case 2:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no2;
+    scanf("%d" , &seat_no2);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no2*270));
+    
+    break;
+      case 3:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no3;
+    scanf("%d" , &seat_no3);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no3*300));
+    
+    break;
+      case 4:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no4;
+    scanf("%d" , &seat_no4);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no4*350));
+    
+    
+    break;
+    
+    default: 
+    printf("INVALID INPUT SORRY!");
+    break;
+    }
+}
+    
+    
+    
+    
+
+    
+    
+     void Book_Ticket_ThorLoveAndThunder()
+{
+    int type;
+    printf("ENTER THE DATE FOR MOVIE BOOKING\n");
+   
+    scanf("%s" , b.date);
+    
+    
+    printf("PRESS [1] FOR SILVER CLASS Rs-230\n");
+    printf("PRESS [2] FOR GOLD CLASS Rs-270\n");
+    printf("PRESS [3] FOR DIAMOND CLASS Rs-300\n");
+    printf("PRESS [4] FOR PLATINUM CLASS Rs-350\n");
+    printf("ENTER YOUR CHOICE\n");
+    scanf("%d", &type);
+    switch(type)
+    {
+        case 1:
+        
+    printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no1;
+    scanf("%d" , &seat_no1);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no1*230));
+    
+    break;
+      case 2:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no2;
+    scanf("%d" , &seat_no2);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no2*270));
+    
+    break;
+      case 3:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no3;
+    scanf("%d" , &seat_no3);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no3*300));
+    
+    break;
+      case 4:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no4;
+    scanf("%d" , &seat_no4);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no4*350));
+    
+    
+    break;
+    
+    default: 
+    printf("INVALID INPUT SORRY!");
+    break;
+    }
+}
+    
+    
+    
+    
+
+    
+    
+    
+     void Book_Ticket_BhoolBhuliya2()
+{
+    int type;
+    printf("ENTER THE DATE FOR MOVIE BOOKING\n");
+   
+    scanf("%s" , b.date);
+    
+    
+    printf("PRESS [1] FOR SILVER CLASS Rs-230\n");
+    printf("PRESS [2] FOR GOLD CLASS Rs-270\n");
+    printf("PRESS [3] FOR DIAMOND CLASS Rs-300\n");
+    printf("PRESS [4] FOR PLATINUM CLASS Rs-350\n");
+    printf("ENTER YOUR CHOICE\n");
+    scanf("%d", &type);
+    switch(type)
+    {
+        case 1:
+        
+    printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no1;
+    scanf("%d" , &seat_no1);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no1*230));
+    
+    break;
+      case 2:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no2;
+    scanf("%d" , &seat_no2);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no2*270));
+    
+    break;
+      case 3:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no3;
+    scanf("%d" , &seat_no3);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no3*300));
+    
+    break;
+      case 4:
+        
+     printf("ENTER THE NUMBER OF SEATES TO BE BOOKED\n");
+    int seat_no4;
+    scanf("%d" , &seat_no4);
+    printf("ENTER YOUR NAME\n");
+    scanf("%s", b.name);
+    printf("ENTER YOUR PHONE NUMBER\n");
+    scanf("%s", b.number);
+    printf("-------BILL-------\n");
+    printf("Name - %s", b.name);
+    printf("\nPhone Number - %s", b.number);
+    printf("\nDate -%s" ,b.date);
+    printf("\nTotal Amount - %d", (seat_no4*350));
+    
+    
+    break;
+    
+    default: 
+    printf("INVALID INPUT SORRY!");
+    break;
+    }
+}
